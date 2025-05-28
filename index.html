@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Repo Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1>GitHub  Finder</h1>
+  </nav>
+
+  <main class="main-container">
+    <div class="form-control">
+      <label for="languageSelect">Selecciona un lenguaje:</label>
+      <select id="languageSelect">
+        <option value="">--- Lenguaje ---</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="C++">C++</option>
+        <option value="Go">Go</option>
+        <option value="TypeScript">TypeScript</option>
+      </select>
+    </div>
+
+    <div id="statusMessage" class="status"></div>
+
+    <div id="repoCard" class="card hidden">
+      <h2 id="repoName"></h2>
+      <p id="repoDesc"></p>
+      <ul>
+        <li id="stars">⭐</li>
+        <li id="forks">🍴</li>
+        <li id="issues">🐛</li>
+      </ul>
+      <a id="repoLink" href="#" target="_blank">🔗 Ver en GitHub</a>
+    </div>
+
+    <button id="refreshBtn" class="refresh hidden">🔄 Otro repositorio</button>
+  </main>
+
+  <footer>
+    <p>Proyecto educativo usando  API de GitHub</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
